@@ -11,11 +11,13 @@
   --back-col-btn: #188ce8;
   --btn-box-shadow: rgba(0, 0, 0, 0.15);
   --btn-text: #ffffff;
+  --back-col-portf-btn: #f5f4fa;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   /* outline: 2px solid aqua; */
 }
@@ -62,7 +64,8 @@ p {
 
 /* --------------HEADER------------------- */
 .header {
-  /* background: #ccc; */
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -122,9 +125,12 @@ p {
 
 /* ---------------HERO------------------ */
 .hero {
-  background: var(--back-col);
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
-  margin-bottom: 94px;
+
+  background: var(--back-col);
 }
 
 .hero-title {
@@ -168,8 +174,8 @@ p {
 
 /* ----------------FEATURES--------------*/
 .features {
-  margin-bottom: 94px;
-  /* outline: 2px solid aqua; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features .title {
@@ -191,7 +197,7 @@ p {
 
 /* --------------------works---------------- */
 .works {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .works .section-title {
   margin-bottom: 50px;
@@ -200,6 +206,8 @@ p {
 /* ---------------------TEAM--------------------- */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--back-col-team);
 }
 .team .section-title {
@@ -208,7 +216,8 @@ p {
 .team-item {
   background: var(--col-white);
 }
-.team-list-image {
+.team img {
+  margin-bottom: 30px;
 }
 
 .team .title {
@@ -217,6 +226,7 @@ p {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team .text {
@@ -230,9 +240,15 @@ p {
 
 /* -------------------FOOTER--------------------- */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background: var(--back-col);
 }
-
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 .footer .logo-span {
   color: var(--col-white);
 }
@@ -241,6 +257,9 @@ p {
 }
 
 .footer-address .link {
+  display: inline-block;
+  margin-bottom: 9px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -261,11 +280,15 @@ p {
 
 /* --------------------PORTFOLIO------------------ */
 .portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-btn {
-  font-family: "Roboto";
+  display: inline-block;
+  margin-bottom: 50px;
 
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -273,15 +296,28 @@ p {
   letter-spacing: 0.03em;
   cursor: pointer;
 
-  border-color: var(--back-col-team);
+  background: var(--back-col-portf-btn);
+  border-radius: 4px;
+  border-color: transparent;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background: var(--col-accent);
-  color: var(--col-white);
+  color: var(--btn-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
-
+.portfolio a {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.portfolio img {
+  margin-bottom: 20px;
+}
 .portfolio .title {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.06em;

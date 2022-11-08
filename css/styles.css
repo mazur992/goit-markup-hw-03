@@ -340,6 +340,7 @@ p {
 }
 .portfolio-btn {
   display: inline-block;
+  padding: 6px 22px;
   margin-bottom: 50px;
 
   font-family: "Roboto";

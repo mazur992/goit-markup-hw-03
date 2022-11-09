@@ -32,6 +32,11 @@ body {
   margin: 0;
   list-style: none;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 h1,
 h2,
 h3,
@@ -65,8 +70,6 @@ p {
 
 /* --------------HEADER------------------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--col-border);
 }
 .main-nav {
@@ -110,8 +113,8 @@ p {
 
 .header-nav .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -166,6 +169,9 @@ p {
 }
 
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -262,6 +268,10 @@ p {
   justify-content: space-between;
 }
 .team-item {
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background: var(--col-white);
 }
 .team img {
@@ -301,12 +311,12 @@ p {
   color: var(--col-white);
 }
 
-.footer-address {
+.footer-address .item {
+  margin-bottom: 9px;
 }
 
 .footer-address .link {
   display: inline-block;
-  margin-bottom: 9px;
 
   font-weight: 400;
   font-size: 14px;
@@ -334,6 +344,7 @@ p {
 .portfolio .list-btn {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .list-btn > .item:not(:last-child) {
   margin-right: 8px;
@@ -341,7 +352,6 @@ p {
 .portfolio-btn {
   display: inline-block;
   padding: 6px 22px;
-  margin-bottom: 50px;
 
   font-family: "Roboto";
   font-weight: 500;
@@ -364,8 +374,10 @@ p {
   border-radius: 4px;
 }
 .portfolio-conteiner {
-  max-width: 322;
-  margin: 20px 24px;
+  width: 370px;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .list-filtr {
   display: flex;
@@ -385,9 +397,7 @@ p {
 .portfolio a {
   display: inline-block;
 }
-.portfolio img {
-  margin-bottom: 20px;
-}
+
 .portfolio .title {
   margin-bottom: 4px;
 
